@@ -11,7 +11,7 @@ p {
 }
 
 .background {
-  background-image: url('/images/background.pn');
+  background-image: url('https://raw.githubusercontent.com/thunderawesome/angular-template-site/master/src/images/background.png');
   background-color: #c4faf8;
   background-size: auto;
   background-repeat: no-repeat;
