@@ -1,0 +1,20 @@
+p {
+  font-family: Lato;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.background {
+  background-image: url('https://c10.patreonusercontent.com/3/eyJ3Ijo4MjB9/patreon-media/p/post/52143692/aedc1ec731be46b8884db25bbe489477/1.png?token-time=1625011200&token-hash=KuyvoqiAkaI5KQB2Z08GrL60-9n2YyTzZIJLkrvujuQ%3D');
+  background-color: #c4faf8;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+}
