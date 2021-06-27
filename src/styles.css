@@ -61,9 +61,20 @@
 }
 
 /*  GO FULL WIDTH BELOW 1000 PIXELS */
+@media only screen and (min-width: 1000px) {
+  a.button {
+    padding: 2% !important;
+  }
+
+  .main-content {
+    width: 50% !important;
+  }
+}
+
+/*  GO FULL WIDTH BELOW 1000 PIXELS */
 @media only screen and (max-width: 1000px) {
   a.button {
-    padding: 8% !important;
+    padding: 4% !important;
   }
 }
 
@@ -78,7 +89,20 @@
   }
 
   a.button {
-    padding: 8% !important;
+    padding: 6% !important;
+  }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  .iframe-container {
+    max-height: 50% !important;
+    height: 50% !important;
+    max-width: 100vw;
+    width: 100vw;
+  }
+
+  .iframe-container iframe {
+    width: 100% !important;
   }
 }
 
@@ -96,10 +120,11 @@
   a.button {
     margin: auto !important;
     padding: 4% !important;
+    width: 100% !important;
   }
 
   .iframe-container iframe {
-    width: 7% !important;
+    width: 100% !important;
     height: 100% !important;
   }
 }
@@ -117,7 +142,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow: auto;
   background-attachment: fixed;
 
   position: fixed;
