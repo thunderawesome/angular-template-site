@@ -3,52 +3,49 @@
   font-family: 'Ranchers', cursive;
 }
 
-.row::after {
-  content: '';
+.main-content {
+  max-width: 80%;
+}
+
+/*  SECTIONS  */
+.section {
   clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% auto;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: '';
   display: table;
 }
-
-[class*='col-'] {
-  float: left;
-  padding: 15px;
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 */
 }
 
-.col-1 {
-  width: 8.33%;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-5 {
-  width: 41.66%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.33%;
-}
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
+/*  GRID OF THREE  */
+.span_3_of_3 {
   width: 100%;
+}
+.span_2_of_3 {
+  width: 66.13%;
+}
+.span_1_of_3 {
+  width: 32.26%;
 }
 
 .iframe-container {
@@ -63,11 +60,54 @@
   border: 0px;
 }
 
+/*  GO FULL WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
+  a.button {
+    padding: 8% !important;
+  }
+}
+
+/*  GO FULL WIDTH BELOW 800 PIXELS */
+@media only screen and (max-width: 800px) {
+  .iframe-container {
+    width: 100% !important;
+  }
+
+  .iframe-container iframe {
+    width: 100% !important;
+  }
+
+  a.button {
+    padding: 8% !important;
+  }
+}
+
+/*  GO FULL WIDTH BELOW 600 PIXELS */
+@media only screen and (max-width: 400px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_3_of_3,
+  .span_2_of_3,
+  .span_1_of_3 {
+    width: 100%;
+  }
+
+  a.button {
+    margin: auto !important;
+    padding: 4% !important;
+  }
+
+  .iframe-container iframe {
+    width: 7% !important;
+    height: 100% !important;
+  }
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
   text-align: center;
 }
 
@@ -93,6 +133,16 @@ a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
+  background-color: #04aa6d;
+  border: double;
+  border-width: 1px;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 5px;
+  width: 80%;
 }
 
 a.button:hover {
@@ -102,19 +152,6 @@ a.button:hover {
 
 a.button:active {
   filter: brightness(1.5);
-}
-
-.button {
-  background-color: #04aa6d;
-  border: double;
-  border-width: 1px;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
 }
 
 .button1 {
