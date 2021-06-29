@@ -40,6 +40,13 @@ body {
 .top {
   position: absolute;
   top: 0;
+  width: 100%;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 .center {
@@ -210,6 +217,32 @@ a.button:hover {
 
 a.button:active {
   filter: brightness(1.5);
+}
+
+a.link {
+  color: white;
+  text-shadow: 2px 0 0 indigo, 0 -2px 0 indigo, 0 2px 0 indigo, -2px 0 0 indigo;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2%;
+}
+
+a.link:hover {
+  filter: brightness(1.25);
+  transform: scale(1.1, 1.1);
+}
+
+a.link:active {
+  filter: brightness(2);
+}
+
+.logo:hover {
+  filter: brightness(1.1);
+  transform: scale(1.01, 1.01);
+}
+
+.logo:active {
+  filter: brightness(1.25);
 }
 
 .button1 {
