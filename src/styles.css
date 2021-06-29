@@ -28,6 +28,10 @@ body {
   min-height: 100%;
 }
 
+.bg-color {
+  background-color: slateblue;
+}
+
 .bottom {
   position: absolute;
   bottom: 0;
@@ -47,11 +51,18 @@ body {
 }
 
 .logo {
-  width: 5%;
+  width: 50%;
 }
 
 .main-content {
   max-width: 80%;
+}
+
+.border {
+  border-radius: 10px;
+  border-color: white;
+  border-style: double;
+  border-width: 5px;
 }
 
 /*  SECTIONS  */
@@ -215,11 +226,4 @@ a.button:active {
 }
 .button5 {
   border-radius: 50%;
-}
-
-.border {
-  border-radius: 10px;
-  border-color: white;
-  border-style: double;
-  border-width: 5px;
 }
